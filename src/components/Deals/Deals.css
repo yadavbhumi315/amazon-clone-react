@@ -1,0 +1,123 @@
+.dealsSection {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.dealsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dealsHeader h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.dealsHeader button {
+  background: none;
+  border: none;
+  color: #007185;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dealsHeader button:hover {
+  color: #c7511f;
+}
+
+.dealsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.dealCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+  transition: .3s;
+  position: relative;
+}
+
+.dealCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.15);
+}
+
+.discountBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #cc0c39;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dealImage {
+  height: 220px;
+  padding: 20px;
+}
+
+.dealImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dealTitle {
+  padding: 0 18px;
+  font-size: 18px;
+  font-weight: 600;
+  min-height: 55px;
+}
+
+.dealRating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 18px;
+}
+
+.starIcon {
+  color: #ffa41c;
+}
+
+.dealPrice {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 18px 18px;
+}
+
+.newPrice {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.oldPrice {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.dealButton {
+  width: calc(100% - 36px);
+  margin: 0 18px 18px;
+  background: #ffd814;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.dealButton:hover {
+  background: #f7ca00;
+}

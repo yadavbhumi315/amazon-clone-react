@@ -1,0 +1,49 @@
+.menuBar {
+  width: 100%;
+  height: 42px;
+  background: #232f3e;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+  gap: 12px;
+
+  overflow-x: auto;
+  white-space: nowrap;
+
+  scrollbar-width: none;
+}
+
+.menuBar::-webkit-scrollbar {
+  display: none;
+}
+
+.menuItem {
+  background: transparent;
+  color: white;
+
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  padding: 8px 14px;
+
+  border-radius: 2px;
+
+  transition: 0.25s;
+
+  flex-shrink: 0;
+}
+
+.menuItem:hover {
+  border: 1px solid white;
+}
+
+.activeMenu {
+  border: 1px solid white;
+  background: rgba(255,255,255,0.15);
+}
